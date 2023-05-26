@@ -1,213 +1,41 @@
-/* ======== селектори 1 частина=========== */
-/* :root {
-  background: purple;
+.card {
+  color: rgb(0, 178, 9);
 }
 
-html {
-  max-width: 720px;
-
-  background: blue;
-}
-
-body {
-  background: #fff;
-}
-
-* {
-  color: red;
-}
-
-h1 {
+.card > p {
   color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 0.5px blue;
 }
 
-.box {
-  background: #cfcfcf;
+p:hover {
+  -webkit-text-fill-color: rgb(13, 255, 0);
+  -webkit-text-stroke: 0.5px rgb(255, 0, 208);
+
+  direction: rtl;
 }
 
-#user {
-  color: blue;
+#test {
+  color: unset;
+  -webkit-text-fill-color: unset;
+  -webkit-text-stroke: unset;
+
+  /* writing-mode: vertical-lr; */
+  text-align: right;
+
+  letter-spacing: 0.5em;
 }
 
-h1,
-h2,
-button {
-  color: green;
+span {
+  text-transform: uppercase;
+  text-decoration: underline dotted red;
 }
 
-.button {
-  background: red;
-  color: black;
+span:hover {
+  text-decoration-line: line-through;
+  text-decoration-style: double;
 }
 
-div > p {
-  color: aqua;
-} */
-/* ============================== */
-
-/* ===Селектори 2 частина=== */
-
-.card-dark {
-  background: #ededed;
-}
-
-.item {
-  color: green;
-}
-
-.item:first-child {
-  color: blueviolet;
-}
-
-.item:nth-child(3) {
-  color: rgb(182, 182, 0);
-}
-
-/* ===================================== */
-
-/* ===Селектори 3 частина=== */
-
-.card-dark {
-  background: #ededed;
-}
-
-.input-dark {
-  background: #979797;
-}
-
-.input-dark[required] {
-  background: #d72b2b;
-}
-
-.input-dark[type='number'] {
-  background: #2bd7d1;
-}
-
-.small-img[alt~='small'] {
-  height: 500px;
-}
-
-a[rel~='external'] {
-  color: green;
-}
-
-button[class|='btn'] {
-  background: rebeccapurple;
-}
-
-a[class*='btn'] {
-  background: rgb(51, 153, 73);
-}
-
-.btn::first-letter {
-  color: #d72b2b;
-}
-
-.big-text::first-line {
-  color: red;
-}
-
-.big-text::before,
-.big-text::after {
-  content: '$$$';
-  color: rgb(128, 0, 0);
-  background: #7900fa;
-}
-
-/* ===Селектори 4 частина=== */
-
-#test:target {
-  color: red;
-}
-
-.link:link {
-  color: red;
-}
-
-.link:hover {
-  color: green;
-}
-
-/* .card:hover {
-  background: rgb(169, 255, 183);
-} */
-
-.link:active {
-  color: purple;
-}
-
-.card:active {
-  background: rgb(184, 246, 184);
-}
-
-input {
-  background-color: gray;
-}
-
-input:focus {
-  background-color: aqua;
-}
-
-.card:focus-within {
-  background: rgb(147, 162, 248);
-}
-
-.card:lang(en) > span::after {
-  content: ' (en)';
-}
-
-button {
-  background-color: #7900fa;
-}
-
-button:enabled {
-  background-color: rgb(0, 227, 0);
-}
-
-button:disabled {
-  background-color: rgb(165, 165, 165);
-}
-
-.inp:read-write {
-  background-color: blue;
-}
-
-.inp:read-only {
-  background-color: rgb(255, 0, 0);
-}
-
-input[type='checkbox']:checked ~ span {
-  background: red;
-}
-
-.valid:valid {
-  background: yellow;
-}
-
-.valid:invalid {
-  background: goldenrod;
-}
-
-.valid:optional {
-  background: green;
-}
-
-.number:focus {
-  background: grey;
-}
-
-.number:out-of-range {
-  background: red;
-}
-
-.number:in-range {
-  background: rgb(0, 255, 102);
-}
-
-.number:invalid {
-  background: red;
-}
-
-input:placeholder-shown ~ span {
-  background: pink;
+pre {
+  tab-size: 8;
 }
