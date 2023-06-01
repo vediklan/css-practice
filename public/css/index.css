@@ -39,3 +39,37 @@ span:hover {
 pre {
   tab-size: 8;
 }
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+
+  font-weight: 900;
+
+  font-style: italic;
+
+  font-display: swap;
+}
+
+span {
+  font-size: small;
+
+  font-weight: lighter;
+
+  /* font-style: oblique; */
+}
+
+.test {
+  display: none;
+}
+
+.block {
+  display: block;
+  background: rgb(201, 201, 201);
+
+  margin: auto;
+
+  /* margin-left: 50px; */
+
+  width: fit-content;
+}
