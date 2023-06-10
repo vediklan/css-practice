@@ -180,16 +180,18 @@ h1 {
 .hero_text {
   background: gray;
 
-  /* max-width: 200px; */
-  width: 200px;
+  max-width: 700px;
 
-  hyphens: manual;
+  height: 500px;
+  /* width: 700px; */
+
+  /* hyphens: manual;
 
   overflow: auto;
 
   resize: both;
 
-  word-spacing: 20px;
+  word-spacing: 20px; */
 }
 
 .overflow {
@@ -206,4 +208,28 @@ h1 {
   text-overflow: ellipsis;
 
   white-space: nowrap;
+}
+
+.page {
+  /* background-image: url(/img/test2.jpg);
+
+  background-repeat: no-repeat;
+
+  background-position: center;
+
+  background-attachment: fixed;
+
+  background-size: cover; */
+}
+
+.hero_text {
+  padding: 40px;
+  color: rgb(0, 255, 0);
+  font-weight: 700;
+
+  border-image-source: url('/img/test2.jpg');
+  border-image-width: 10% 10%;
+  border-image-slice: 10% 10%;
+  /* border-image-repeat: space; */
+  /* border-image-outset: 50px; */
 }
