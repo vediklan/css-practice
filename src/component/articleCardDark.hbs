@@ -1,0 +1,19 @@
+{{#with data}}
+<div class="art_title_block">
+	<h1 class="art_title">Our Articles</h1>
+	<a href="#" class="art_but_view">View All</a>
+</div>
+<div class="art_card_block">
+	{{#each articles}}
+	<div class="art_card" id="{{id}}">
+		<img src="{{photo}}" alt="photo 400x200" class="art_img">
+
+
+		<div class="art_card_title">{{name}}</div>
+		<p class="art_text">{{description}}</p>
+		<a href="#" class="art_button">Read All</a>
+		{{#if isNew}}<div class="art_stick">NEW</div>{{/if}}
+	</div>
+	{{/each}}
+</div>
+{{/with}}
