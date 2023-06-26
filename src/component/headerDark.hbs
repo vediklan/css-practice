@@ -1,0 +1,27 @@
+{{#with data}}
+<header>
+	{{#with header}}
+	<div class="nav_logo">
+		<span class="logo">
+			{{brandName}}
+		</span>
+		<div class="nav_links">
+			{{#each links}}
+			<a href="{{url}}" class="nav_link">{{text}}</a>
+			{{/each}}
+		</div>
+	</div>
+
+	<div class="ad_user">
+
+		{{#with ad}}
+		<div class="ad_block">
+			<div class="ad">Ad</div>
+			<div>{{text}}: <a href="{{url}}" class="ad_link">{{url}}</a></div>
+		</div>
+		{{/with}}
+		<div>Users online: {{userOnline}}</div>
+	</div>
+	{{/with}}
+</header>
+{{/with}}
